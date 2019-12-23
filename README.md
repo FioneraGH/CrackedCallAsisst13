@@ -6,3 +6,5 @@ CallAssist13 is 0.9.9.
 
 Patch it with IDA. 
 
+Buy License [Here](http://buy.htv123.com/).
+
