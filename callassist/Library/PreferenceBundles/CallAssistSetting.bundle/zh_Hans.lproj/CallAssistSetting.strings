@@ -1,0 +1,32 @@
+"TELEPHONE_ASSISTANT" = "电话助手";
+"ICOMINGANDOUTGOING_CALL" = "来去电归属地详细设置";
+"PHONE_ATTRIBUTION_SETTING" = "电话归属设置";
+"PHONE_VIBRATION_DETAILED_SETTINGS" = "电话接通/挂断振动详细设置";
+"PHONE_VIBRATION_SETTINGS" = "电话振动设置";
+"T9_DIALPAD_SETTINGS" = "新版T9拨号键盘设置";
+"DIALPAD_SETTINGS" = "拨号键盘设置";
+"HARASSMENT_INTERCEPTION_SETTINGS" = "电话骚扰拦截设置";
+"HI_SETTINGS" = "骚扰拦截设置";
+"DETAILED_SETTINGS" = "锁屏,运营商,网络,网速等设置";
+"OTHER_MISCELLANEOUS_SETTINGS" = "其他杂项设置";
+"CALL_SETTINGS" = "通话设置\n提示: 输入通话记录条数后按键盘换行键或回车键确认";
+"NUMBER_CALL_RECORDS" = "通话记录条数";
+"SYSTEM_DEFAULT_COUNT" = "系统默认100条";
+"CLEARED_CALL_TIME" = "通话时间清零";
+"CANCEL" = "取消";
+"YES" = "确定";
+"SURE_CLEAR_THE_CALL_TIME" = "你确定要清零通话时间吗?";
+"NOTE_TIPS" = "注意:请根据提示激活,15秒后点击[注销]";
+"AUTHORIZATION_STATUS" = "当前授权状态";
+"CURRENT_SYSTEM_VERSION" = "当前系统版本";
+"ACTIVATE_GENUINE_LICENSE" = "激活正版授权";
+"LOGOUT_DESKTOP_TAKES_EFFECT" = "注销桌面生效";
+"ABOUT_TELEPHONE_ASSISTANT" = "关于电话助手";
+"INTRODUCTION_TIPS" = "电话助手\n集原生T9,来去电归属地,通话记录突破,短信归属地,骚扰拦截,网速显示,电池显示等集于一身的强大插件\n📣📣📣开发者: xybp888\n 界面美化: 妖刀";
+"GOOD" = "好的";
+"PAY_GENUINE_LICENSE" = "赞助购买授权";
+"RE_SET_SIN" = "清除授权信息";
+"RE_SET_CFG" = "重置配置文件";
+"DEVELOPER_USER" = "电话助手(CallAssist) ©2019 当前版本: 0.9.9\n购买授权QQ群号: 7601585\n微博: http://weibo.com/xybp888\n正版分流源:https://repo.cydiabc.top\n英文翻译 by KIIIMO\nTwitter @Cydia_kiiMO\nhttp://cydia.kiiimo.org";
+
+

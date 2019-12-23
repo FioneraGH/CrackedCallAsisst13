@@ -1,0 +1,13 @@
+Package: com.xybp888.CallAssist13
+Version: 0.9.9
+Priority: optional
+Section: System
+Maintainer: xybp888 <8657156@qq.com>
+Description: 电话助手授权版本,集成T9,来去电归属地,黑名单,骚扰拦截等强大插件
+Depends: firmware (>= 13.0), mobilesubstrate,preferenceLoader
+Architecture: iphoneos-arm
+Name: 电话助手iOS13-测试版(不支持A12)
+Author: xybp888 <8657156@qq.com>
+Depiction: https://apt.htv123.com/view/107
+SileoDepiction: https://apt.htv123.com/sileo/107
+Icon: file:///Library/PreferenceBundles/CallAssistSetting.bundle/CallAssistIcon@3x.png

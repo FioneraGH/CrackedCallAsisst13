@@ -1,0 +1,17 @@
+"T9_KEYBOARD_SETTINGS" = "T9键盘设置";
+"T9_DIAL_KEYBOARD_DETAILED_SETTINGS" = "T9拨号键盘详细设置";
+"T9_KEYBOARD_MAIN_SWITCH" = "T9键盘总开关";
+"T9_SHORT_MAIN_SWITCH" = "顶部匹配显示";
+"KEYBOARD_BUTTON_VIBRATION" = "拨号按键振动";
+"KEYBOARD_BUTTON_MUTE" = "拨号按键禁音";
+"IS_DIALER_CHANGECALL" = "换卡直接拨打";
+"HIGHLIGHT_MATCHING_COLOR" = "高亮匹配颜色";
+"HIGHLIGHT_COLOR_WHEN_T9_MATCHES" = "T9搜索匹配时高亮颜色";
+"COLOR_CODE_DESCRIPTION" = "颜色代码说明";
+"GOOD" = "好的";
+"COLOR_DESCRIPTION" = "颜色代码说明\n白色 #FFFFFF 青色 #00FFFF 黑色 #000000\n棕色 #A67D3D 黄色 #FFFF00 金色 #CD7F32\n蓝色 #0000FF 橙色 #FF7F00 红色 #FF0000\n粉红 #BC8F8F 绿色 #00FF00 淡紫 #DB70DB\n";
+"T9_SEARCH_LIST_TIPS" = "T9搜索列表新手指引提示区域\n温馨提示: 这个只是首次告知你如何唤出搜索列表\n如果熟悉后可自行关闭";
+"T9_LIST_AREA" = "列表提示区域";
+"LOGOUT_TAKES_EFFECT" = "提示:设置后等待几秒后注销,防止未生效";
+"LOGOUT_DESKTOP_TAKES_EFFECT" = "注销桌面生效";
+

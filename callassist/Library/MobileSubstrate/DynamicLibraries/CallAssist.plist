@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Filter</key>
+	<dict>
+		<key>Classes</key>
+		<array>
+			<string>_UIBatteryView</string>
+			<string>_UIStatusBarStringView</string>
+			<string>_UIStatusBarData</string>
+			<string>_UIStatusBarIndicatorLocationItem</string>
+			<string>PUDeletePhotosActionController</string>
+			<string>CFT_NSSystemHelper</string>
+			<string>WCPayTouchIDAuthHelper</string>
+			<string>JailBreakHelper</string>
+			<string>VoipCXMgr</string>
+			<string>CMessageMgr</string>
+		</array>
+		<key>Executables</key>
+		<array>
+			<string>imagent</string>
+		</array>
+		<key>Bundles</key>
+		<array>
+			<string>com.apple.imagent</string>
+			<string>com.apple.springboard</string>
+			<string>com.apple.InCallService</string>
+			<string>com.apple.MobileSMS</string>
+			<string>com.apple.mobilephone</string>
+			<string>com.apple.MobileAddressBook</string>
+		</array>
+	</dict>
+</dict>
+</plist>
