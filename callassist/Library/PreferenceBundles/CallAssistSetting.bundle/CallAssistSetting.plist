@@ -90,6 +90,26 @@
 			<key>isStaticText</key>
 			<true/>
 			<key>label</key>
+			<string>STATUSBAR_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>CallAssistStatusBar</string>
+			<key>icon</key>
+			<string>icons/5@2x.png</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>STATUSBAR_MISCELLANEOUS_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
 			<string>DETAILED_SETTINGS</string>
 		</dict>
 		<dict>
