@@ -8,3 +8,9 @@ Patch it with IDA.
 
 Buy License [Here](http://buy.htv123.com/).
 
+### Offset
+
+- 0.9.9-15 (0x12FAC)
+
+- 0.9.9-11 (0x?)
+

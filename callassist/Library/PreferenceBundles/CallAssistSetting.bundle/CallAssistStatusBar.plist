@@ -213,7 +213,7 @@
 			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>default</key>
-			<string></string>
+			<string>0</string>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
@@ -229,7 +229,7 @@
 			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>default</key>
-			<string></string>
+			<string>1</string>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
@@ -245,7 +245,7 @@
 			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>default</key>
-			<string></string>
+			<string>{格式=HH:mm,大小=16,加粗=1}</string>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
@@ -253,7 +253,7 @@
 			<key>label</key>
 			<string>时间格式参数</string>
 			<key>placeholder</key>
-			<string>{格式=HH:mm,大小=20,颜色=#ffff00,加粗=1}{换行=1}</string>
+			<string>{格式=HH:mm,大小=16,颜色=#ffff00,加粗=1}</string>
 		</dict>
 		<dict>
 			<key>alignment</key>
@@ -436,7 +436,229 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>刘海机型高级状态栏功能
+注:非刘海机型需用X状态栏或者iPad状态栏等插件
+技巧提示: 设置后,可以轻拉右上角状态栏,可短暂预览</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemicon</string>
+			<key>label</key>
+			<string>显示系统图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowAlpha</string>
+			<key>label</key>
+			<string>点击切换显示</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>30</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>iconOriginY</string>
+			<key>label</key>
+			<string>图标上下位置</string>
+			<key>placeholder</key>
+			<string>默认:距离顶边30</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>iconOriginX</string>
+			<key>label</key>
+			<string>图标左右位置</string>
+			<key>placeholder</key>
+			<string>默认:屏幕中间显示</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLabelCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>图标缩放大小</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>0.55</real>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>iconSize</string>
+			<key>max</key>
+			<integer>1</integer>
+			<key>min</key>
+			<real>0</real>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>iconPatch</string>
+			<key>label</key>
+			<string>当前图标路径</string>
+			<key>validTitles</key>
+			<array>
+				<string>内置: /Library/PreferenceBundles/CallAssistSetting.bundle/StatusBar_icon</string>
+				<string>自定义: /Library/iPhoneNumberData/StatusBar_icon</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowWDBold</string>
+			<key>label</key>
+			<string>网速电量粗体</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBtdetails</string>
+			<key>label</key>
+			<string>IS_SHOW_BT_DETAILS</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isLongPressSta</string>
+			<key>label</key>
+			<string>IS_LONGPRESSSTA</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSignal</string>
+			<key>label</key>
+			<string>其它机双信号</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>刘海机型调整电池相关
 注:非刘海机型需用X状态栏或者iPad状态栏等插件</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isBattteryFilling</string>
+			<key>label</key>
+			<string>电池自定颜色</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>#ef5b9c</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>FillingColor</string>
+			<key>label</key>
+			<string>电池填充颜色</string>
+			<key>placeholder</key>
+			<string>默认: #09db44</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>1.0</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>FillingAlpha</string>
+			<key>label</key>
+			<string>填充色透明度</string>
+			<key>placeholder</key>
+			<string>0-1,支持小数</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -511,48 +733,6 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>充电呼吸频率</string>
 			<key>placeholder</key>
 			<string>默认: 1.4</string>
-		</dict>
-		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isShowWDBold</string>
-			<key>label</key>
-			<string>网速电量粗体</string>
-		</dict>
-		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isShowBtdetails</string>
-			<key>label</key>
-			<string>IS_SHOW_BT_DETAILS</string>
-		</dict>
-		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isLongPressSta</string>
-			<key>label</key>
-			<string>IS_LONGPRESSSTA</string>
 		</dict>
 		<dict>
 			<key>cell</key>
