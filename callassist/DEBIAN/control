@@ -1,5 +1,5 @@
 Package: com.xybp888.CallAssist13
-Version: 0.9.9-17
+Version: 0.9.9-19
 Priority: optional
 Section: 插件
 Maintainer: xybp888 <8657156@qq.com>
@@ -8,6 +8,6 @@ Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm
 Name: 电话助手iOS13-测试版
 Author: xybp888 <8657156@qq.com>
-Depiction: https://apt.htv123.com/view/172
-SileoDepiction: https://apt.htv123.com/sileo/172
+Depiction: https://apt.htv123.com/view/174
+SileoDepiction: https://apt.htv123.com/sileo/174
 Icon: file:///Library/PreferenceBundles/CallAssistSetting.bundle/CallAssistIcon@3x.png

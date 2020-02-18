@@ -113,14 +113,14 @@
 			<key>validValues</key>
 			<array>
 				<real>1519</real>
-				<real>1520</real>
-				<integer>1521</integer>
+				<integer>1520</integer>
+				<real>1521</real>
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<string>4</string>
-				<string>5</string>
-				<string>6</string>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
 				<integer>7</integer>
 			</array>
 		</dict>
