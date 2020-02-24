@@ -119,7 +119,9 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>刘海机型专用(总开关其他机型也需打开)</string>
+			<string>刘海机型专用(总开关其他机型也需打开)
+注意: 独立时间模块,支持模块位置,模块大小等调整
+关闭后,原生模块不支持模块位置,模块大小等调整</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -189,6 +191,20 @@
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
+			<string>TimeFrameSet</string>
+			<key>label</key>
+			<string>时间独立模块</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
 			<string>isTimeFormatSwitch</string>
 			<key>label</key>
 			<string>自定格式开关</string>
@@ -222,6 +238,38 @@
 			<string>时间整体行距</string>
 			<key>placeholder</key>
 			<string>如:-1 正值扩大,负值缩小</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>8,-12</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>timeFrameOrigin</string>
+			<key>label</key>
+			<string>时间整体位置</string>
+			<key>placeholder</key>
+			<string>如:0,3 英文逗号分隔(左,上)</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>100,60</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>timeFrameSize</string>
+			<key>label</key>
+			<string>时间整体大小</string>
+			<key>placeholder</key>
+			<string>如:100,34 英文逗号分隔(宽,高)</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -319,9 +367,71 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
+			<string>locationFrameSet</string>
+			<key>label</key>
+			<string>定位自定位置</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>27</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>locationFrameOriginY</string>
+			<key>label</key>
+			<string>定位图标上下</string>
+			<key>placeholder</key>
+			<string>如:32 英文逗号分隔(上下)</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>35</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>locationFrameOriginX</string>
+			<key>label</key>
+			<string>定位图标左右</string>
+			<key>placeholder</key>
+			<string>如:30 英文逗号分隔(左右)</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
 			<string>isStateSpeed</string>
 			<key>label</key>
 			<string>状态栏显网速</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>10</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>SpeedSize</string>
+			<key>label</key>
+			<string>网速字体大小</string>
+			<key>placeholder</key>
+			<string>默认:10,支持小数</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -710,6 +820,22 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
 			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>9</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowYSBTSize</string>
+			<key>label</key>
+			<string>原生字体大小</string>
+			<key>placeholder</key>
+			<string>支持小数-默认: 9</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
 			<false/>
@@ -726,7 +852,7 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
