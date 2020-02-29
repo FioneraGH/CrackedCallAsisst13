@@ -1,3 +1,17 @@
 #!/bin/sh
-killall -9 imagent &> /dev/null
+launchctl stop com.apple.imagent
+#创建电话助手自定义图标目录
+mkd()
+{
+    if [ ! -e $1 ]; then
+        mkdir $1;
+    fi;
+}
+mkd /Library/iPhoneNumberData/theme
+mkd /Library/iPhoneNumberData/theme/Example
+mkd /Library/iPhoneNumberData/theme/Example/Battery
+mkd /Library/iPhoneNumberData/theme/Example/Cellular
+mkd /Library/iPhoneNumberData/theme/Example/DataNetWork
+mkd /Library/iPhoneNumberData/theme/Example/System
+mkd /Library/iPhoneNumberData/theme/Example/Wifi
 exit 0

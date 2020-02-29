@@ -250,7 +250,6 @@
 			<key>label</key>
 			<string>IS_NOSHOW_FOREVER</string>
 		</dict>
-		
 		<dict>
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
@@ -266,22 +265,6 @@
 			<string>去列表分割线</string>
 		</dict>
 		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isLowLockScrren</string>
-			<key>label</key>
-			<string>锁屏自动低电</string>
-		</dict>
-
-	
-		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
@@ -291,7 +274,6 @@
 			<key>label</key>
 			<string>IPHONEX_EXCLUSIVE_FEATURE_SETTINGS</string>
 		</dict>
-	
 		<dict>
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
@@ -344,6 +326,20 @@
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
+			<string>isHiddenRightBar</string>
+			<key>label</key>
+			<string>隐藏右上横条</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
 			<string>isHideHomeFolder</string>
 			<key>label</key>
 			<string>IS_HIDE_HOMEFOLDER</string>
@@ -362,7 +358,6 @@
 			<key>label</key>
 			<string>IS_HIDE_HOMEFOLDER_BT</string>
 		</dict>
-
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
