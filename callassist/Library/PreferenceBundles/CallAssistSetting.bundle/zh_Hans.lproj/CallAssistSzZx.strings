@@ -3,7 +3,7 @@
     "AUTOMATIC_FONT_ADAPTATION" = "字体自动适应";
     "COLOR_CODE_DESCRIPTION" = "颜色代码说明";
     "COLOR_DESCRIPTION" = "颜色代码说明\n白色 #FFFFFF 青色 #00FFFF 黑色 #000000\n棕色 #A67D3D 黄色 #FFFF00 金色 #CD7F32\n蓝色 #0000FF 橙色 #FF7F00 红色 #FF0000\n粉红 #BC8F8F 绿色 #00FF00 淡紫 #DB70DB\n";
-    "CONVENIENT_VOICE_ASSISTANT" = "便捷语音助手";
+    "CONVENIENT_VOICE_ASSISTANT" = "便捷电源操作";
     "CUSTOM_CARRIER_TEXT" = "自定义运营商";
     "CUSTOM_CARRIER_TEXT2" = "自定义运营商";
     "CUSTOM_CARRIER_TEXT_TIPS" = "卡1自定义文本|留空不修改";
@@ -18,7 +18,7 @@
     "HIDDEN_NO_SPEED" = "无网速时隐藏";
     "HIDE_VOICEMAIL" = "隐藏语音信箱";
     "HORIZONTAL_SCREEN_HIDDEN_DISPLAY" = "横屏隐藏显示";
-    "IPHONEX_EXCLUSIVE_FEATURE_SETTINGS" = "刘海机型专属功能设置\n便捷语音助手:长按主屏幕空白处启动Siri";
+    "IPHONEX_EXCLUSIVE_FEATURE_SETTINGS" = "刘海机型专属功能设置\n便捷电源操作:长按主屏幕空白处弹出操作电源菜单";
     "IPHONEX_STATUSBAR_TIME_SETTING" = "iPhone X/xr/xs/Max 状态栏相关设置\n提示:非这些机型不要动下面的选项";
     "IS_DUBLETAP_LOCK" = "双击桌面锁屏";
     "IS_HIDE_HOMEBAR" = "隐藏底部横条";

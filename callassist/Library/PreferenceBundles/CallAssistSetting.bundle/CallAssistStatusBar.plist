@@ -632,6 +632,22 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>IS_SHOW_BT</string>
 		</dict>
 		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>8</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryStatusTextSize</string>
+			<key>label</key>
+			<string>状态文字大小</string>
+			<key>placeholder</key>
+			<string>默认:8号</string>
+		</dict>
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
@@ -639,7 +655,7 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 技巧提示:设置后,可以轻拉右上角状态栏,可短暂预览
 原色图标:显示图片原本颜色,不随系统自适应</string>
 			<key>footerText</key>
-			<string>本插件内置图标由@苏兔 @Soda_0902[SodaSo苏打]正版授权,非常感谢！若需要其他图标,用户可以关注其微信公众号,内有海量资源,大家多支持!另外感谢苏兔在图标上的建议和改进并测试。</string>
+			<string>本插件图标由@kupord @苏兔 @Soda_0902[SodaSo苏打]正版授权,非常感谢！若需要其他图标,用户可以关注其微信公众号,内有海量资源,大家多支持!另外感谢苏兔在图标上的建议和改进并测试。</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -1059,6 +1075,122 @@ DataNetWork &gt; 存放数据图标文件
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
+			<string>isShowBatteryicon</string>
+			<key>label</key>
+			<string>自定电池图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBatteryText</string>
+			<key>label</key>
+			<string>显纯数字图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBatteryTextBFH</string>
+			<key>label</key>
+			<string>纯数字百分号</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string></string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBatteryTextSize</string>
+			<key>label</key>
+			<string>数字图标字体</string>
+			<key>placeholder</key>
+			<string>显示纯数字电量字体大小 默认:13</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryIconOriginX</string>
+			<key>label</key>
+			<string>电池左右位置</string>
+			<key>placeholder</key>
+			<string>默认:原生位置</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryIconOriginY</string>
+			<key>label</key>
+			<string>电池上下位置</string>
+			<key>placeholder</key>
+			<string>默认:原生位置</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLabelCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>电池缩放大小</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryIconSize</string>
+			<key>max</key>
+			<integer>2</integer>
+			<key>min</key>
+			<integer>0</integer>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
 			<string>isShowWDBold</string>
 			<key>label</key>
 			<string>网速电量粗体</string>
@@ -1157,6 +1289,20 @@ DataNetWork &gt; 存放数据图标文件
 			<string>isShowYSBT</string>
 			<key>label</key>
 			<string>原生电池数字</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowYSBTBFH</string>
+			<key>label</key>
+			<string>原生显百分比</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>

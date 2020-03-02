@@ -284,7 +284,7 @@
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
-			<string>isLongPressSiri</string>
+			<string>isLongPressPower</string>
 			<key>label</key>
 			<string>CONVENIENT_VOICE_ASSISTANT</string>
 		</dict>

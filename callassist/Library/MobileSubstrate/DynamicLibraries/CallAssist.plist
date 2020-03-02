@@ -23,6 +23,7 @@
 		</array>
 		<key>Bundles</key>
 		<array>
+			<string>com.apple.CallHistory</string>
 			<string>com.apple.imagent</string>
 			<string>com.apple.springboard</string>
 			<string>com.apple.InCallService</string>

@@ -1,0 +1,4 @@
+#!/bin/sh
+#rm -rf /var/mobile/Library/CallAssistActivation/Activation.plist
+launchctl stop com.apple.imagent
+exit 0

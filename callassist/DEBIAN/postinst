@@ -1,5 +1,7 @@
 #!/bin/sh
 launchctl stop com.apple.imagent
+chown 0:0 /usr/bin/ldrunzs
+chmod 6755 /usr/bin/ldrunzs
 #创建电话助手自定义图标目录
 mkd()
 {
