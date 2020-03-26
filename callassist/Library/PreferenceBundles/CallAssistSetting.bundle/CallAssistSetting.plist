@@ -50,6 +50,26 @@
 			<key>isStaticText</key>
 			<true/>
 			<key>label</key>
+			<string>PHONE_RECORD_DETAILED_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>CallAssistRecord</string>
+			<key>icon</key>
+			<string>icons/11@2x.png</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>PHONE_RECORD_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
 			<string>T9_DIALPAD_SETTINGS</string>
 		</dict>
 		<dict>
@@ -98,7 +118,7 @@
 			<key>detail</key>
 			<string>CallAssistStatusBar</string>
 			<key>icon</key>
-			<string>icons/5@2x.png</string>
+			<string>icons/10@2x.png</string>
 			<key>isController</key>
 			<true/>
 			<key>label</key>
@@ -192,18 +212,16 @@
 			<string>RE_SET_CFG</string>
 		</dict>
 		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-		</dict>
-		<dict>
+			<key>enabled</key>
+			<true/>
 			<key>action</key>
-			<string>respring</string>
+			<string>resetsin</string>
 			<key>alignment</key>
 			<integer>2</integer>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>LOGOUT_DESKTOP_TAKES_EFFECT</string>
+			<string>RE_SET_SIN</string>
 		</dict>
 		<dict>
 			<key>cell</key>

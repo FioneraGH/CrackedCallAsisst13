@@ -1,6 +1,6 @@
 Package: com.xybp888.CallAssist13
 Name: 电话助手iOS13-正式完整版(兼容A12/A13)
-Version: 1.0.5
+Version: 1.1.4
 Section: Tweak
 Depends: firmware (>= 13.0), mobilesubstrate,preferenceloader
 Conflicts: 
@@ -8,7 +8,7 @@ Replaces:
 Priority: optional
 Architecture: iphoneos-arm
 Author: xybp888 <8657156@qq.com>
-Description: 电话助手授权版本,集成T9,来去电归属地,黑名单,骚扰拦截等强大插件
+Description: 电话助手授权版本,集成T9,通话录音,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Depiction: https://apt.htv123.com/update.html
 SileoDepiction: https://apt.htv123.com/update.html
 Homepage: https://apt.htv123.com

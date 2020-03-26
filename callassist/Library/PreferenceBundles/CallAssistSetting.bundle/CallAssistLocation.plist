@@ -346,20 +346,6 @@
 			<key>label</key>
 			<string>INCOMING_OUTGOING_NUMBERS_DISPLAY</string>
 		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>LOGOUT_TAKES_EFFECT</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>respring</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>LOGOUT_DESKTOP_TAKES_EFFECT</string>
-		</dict>
 	</array>
 	<key>title</key>
 	<string>ATTRIBUTION_SETTINGS</string>

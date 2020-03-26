@@ -460,20 +460,6 @@
 			<key>label</key>
 			<string>ENABLE_ALIPAY_FINGERPRINT_AND_FACEID</string>
 		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>LOGOUT_TAKES_EFFECT</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>respring</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>LOGOUT_DESKTOP_TAKES_EFFECT</string>
-		</dict>
 	</array>
 	<key>title</key>
 	<string>MISCELLANEOUS_SETTINGS_FEATURED_FEATURES</string>

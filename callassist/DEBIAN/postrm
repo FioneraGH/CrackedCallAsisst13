@@ -1,4 +1,11 @@
 #!/bin/sh
-#rm -rf /var/mobile/Library/CallAssistActivation/Activation.plist
+
+#短信拦截进程重新启动使拦截功能卸载
 launchctl stop com.apple.imagent
+
+#重新启动录音进程使录音功能卸载
+killall -9 mediaserverd
+killall -9 InCallService
+killall -9 aggregated
+
 exit 0

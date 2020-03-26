@@ -1083,6 +1083,30 @@ DataNetWork &gt; 存放数据图标文件
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
 			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<string>1</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>BatteryStyleImage</string>
+			<key>validTitles</key>
+			<array>
+				<string>普通名称素材</string>
+				<string>@2x名称素材</string>
+				<string>@3x名称素材</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
 			<false/>
@@ -1467,20 +1491,6 @@ DataNetWork &gt; 存放数据图标文件
 			<string>自动打开低电</string>
 			<key>placeholder</key>
 			<string>电量低于多少开启低电(如:80)</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>LOGOUT_TAKES_EFFECT</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>respring</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>LOGOUT_DESKTOP_TAKES_EFFECT</string>
 		</dict>
 	</array>
 	<key>title</key>

@@ -1,14 +1,30 @@
 #!/bin/sh
+
+#短信拦截进程重新启动使拦截功能生效
 launchctl stop com.apple.imagent
+
+#重新启动录音进程使录音功能生效
+killall -9 mediaserverd
+killall -9 InCallService
+
+#软重启脚本
 chown 0:0 /usr/bin/ldrunzs
 chmod 6755 /usr/bin/ldrunzs
-#创建电话助手自定义图标目录
+
+#创建电话助手自定义图标目录结构脚本开始
 mkd()
 {
     if [ ! -e $1 ]; then
         mkdir $1;
     fi;
 }
+#创建录音存放路径
+mkd /var/mobile/Media/DCIM/CallAssist
+#录音文件存放目录必须设置为普通权限
+chown 501:501 /var/mobile/Media/DCIM/CallAssist
+chmod 0750 /var/mobile/Media/DCIM/CallAssist
+
+#创建电话助手自定义图标目录结构
 mkd /Library/iPhoneNumberData/theme
 mkd /Library/iPhoneNumberData/theme/Example
 mkd /Library/iPhoneNumberData/theme/Example/Battery
