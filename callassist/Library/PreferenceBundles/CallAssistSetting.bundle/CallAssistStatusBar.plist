@@ -56,8 +56,8 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>悬浮窗网速设置
-支持全设备,但是注意:开启悬浮窗网速后建议关闭状态栏网速</string>
+			<string>悬浮窗网速设置(支持全设备)
+建议:开启悬浮窗网速后建议关闭状态栏网速</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -215,7 +215,7 @@
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
@@ -290,18 +290,16 @@
 		<dict>
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSEditTextCell</string>
+			<key>cellClass</key>
+			<string>ZSCallAssistCell</string>
 			<key>default</key>
 			<string>{格式=HH:mm,大小=16,加粗=1}</string>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
+			<key>height</key>
+			<string>180</string>
 			<key>key</key>
 			<string>timeFormatParma</string>
-			<key>label</key>
-			<string>时间格式参数</string>
-			<key>placeholder</key>
-			<string>{格式=HH:mm,大小=16,颜色=#ffff00,加粗=1}</string>
 		</dict>
 		<dict>
 			<key>alignment</key>
@@ -615,7 +613,8 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>isStaticText</key>
 			<true/>
 			<key>label</key>
-			<string>IPHONEX_EXCLUSIVE_FEATURE_SETTINGS</string>
+			<string>刘海机型特殊功能
+注:非刘海机型使用X状态栏等插件也能使用部分功能</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -637,6 +636,38 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>default</key>
+			<integer>26</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryStatusTextX</string>
+			<key>label</key>
+			<string>状态文字左右</string>
+			<key>placeholder</key>
+			<string>默认:26</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<real>11.5</real>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryStatusTextY</string>
+			<key>label</key>
+			<string>状态文字上下</string>
+			<key>placeholder</key>
+			<string>默认:11.5</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
 			<integer>8</integer>
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
@@ -648,14 +679,57 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>默认:8号</string>
 		</dict>
 		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowWDBold</string>
+			<key>label</key>
+			<string>网速电量粗体</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBtdetails</string>
+			<key>label</key>
+			<string>IS_SHOW_BT_DETAILS</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isLongPressSta</string>
+			<key>label</key>
+			<string>IS_LONGPRESSSTA</string>
+		</dict>
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>刘海机型调整图标相关(注:非刘海机型需用X状态栏等插件)
+			<string>刘海机型调整图标相关
+注:非刘海机型需用X状态栏等插件
 技巧提示:设置后,可以轻拉右上角状态栏,可短暂预览
 原色图标:显示图片原本颜色,不随系统自适应</string>
 			<key>footerText</key>
-			<string>本插件图标由@kupord @苏兔 @Soda_0902[SodaSo苏打]正版授权,非常感谢！若需要其他图标,用户可以关注其微信公众号,内有海量资源,大家多支持!另外感谢苏兔在图标上的建议和改进并测试。</string>
+			<string>本插件图标由@kupord @苏兔 @Soda_0902[SodaSo苏打]正版授权,非常感谢! 若需要其他图标,可关注其微信公众号,内有海量资源,大家多支持! 感谢苏兔在图标上的建议和改进并测试.</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -738,6 +812,10 @@ DataNetWork &gt; 存放数据图标文件
 			<string>Icon.png</string>
 			<key>label</key>
 			<string>主题路径说明</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -894,6 +972,10 @@ DataNetWork &gt; 存放数据图标文件
 			<true/>
 		</dict>
 		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
 			<key>cell</key>
@@ -980,6 +1062,10 @@ DataNetWork &gt; 存放数据图标文件
 			<true/>
 		</dict>
 		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
 			<key>cell</key>
@@ -1064,6 +1150,10 @@ DataNetWork &gt; 存放数据图标文件
 			<integer>0</integer>
 			<key>showValue</key>
 			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -1206,53 +1296,11 @@ DataNetWork &gt; 存放数据图标文件
 			<true/>
 		</dict>
 		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isShowWDBold</string>
-			<key>label</key>
-			<string>网速电量粗体</string>
-		</dict>
-		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isShowBtdetails</string>
-			<key>label</key>
-			<string>IS_SHOW_BT_DETAILS</string>
-		</dict>
-		<dict>
-			<key>PostNotification</key>
-			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.xybp888.CallAssistSetting</string>
-			<key>key</key>
-			<string>isLongPressSta</string>
-			<key>label</key>
-			<string>IS_LONGPRESSSTA</string>
-		</dict>
-		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>刘海机型调整电池相关
-注:非刘海机型需用X状态栏或者iPad状态栏等插件</string>
+注:非刘海机型需用X状态栏等插件</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>

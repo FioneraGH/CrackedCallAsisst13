@@ -1,11 +1,10 @@
 #!/bin/sh
 
 #短信拦截进程重新启动使拦截功能卸载
-launchctl stop com.apple.imagent
+killall -9 imagent &> /dev/null
 
 #重新启动录音进程使录音功能卸载
-killall -9 mediaserverd
-killall -9 InCallService
-killall -9 aggregated
+killall -9 mediaserverd &> /dev/null
+killall -9 InCallService &> /dev/null
 
 exit 0
