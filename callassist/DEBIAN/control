@@ -1,6 +1,6 @@
 Package: com.xybp888.CallAssist13
 Name: 电话助手iOS13-正式完整版(兼容A12/A13)
-Version: 1.2.2
+Version: 1.2.3.0-0
 Section: Tweak
 Depends: firmware (>= 13.0), mobilesubstrate,preferenceloader
 Conflicts: 

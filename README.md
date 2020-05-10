@@ -10,6 +10,8 @@ Buy License [Here](http://buy.htv123.com/).
 
 ### Offset
 
+- 1.2.3.0 (0x15624)
+
 - 1.2.2 (0x16044)
 
 - 1.1.4 (0x16038)

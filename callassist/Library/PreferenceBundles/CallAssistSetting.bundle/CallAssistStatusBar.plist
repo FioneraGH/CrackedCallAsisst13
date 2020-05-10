@@ -433,6 +433,36 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
 			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowUpSpeed</string>
+			<key>label</key>
+			<string>显示上传网速</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string></string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>SpeedTextPrefix</string>
+			<key>label</key>
+			<string>网速前缀标识</string>
+			<key>placeholder</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>default</key>
 			<integer>10</integer>
@@ -1036,6 +1066,52 @@ DataNetWork &gt; 存放数据图标文件
 			<string>默认:原生位置</string>
 		</dict>
 		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSecondaryCard</string>
+			<key>label</key>
+			<string>启用副卡图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>SecondaryCardIconOriginX</string>
+			<key>label</key>
+			<string>副卡左右位置</string>
+			<key>placeholder</key>
+			<string>默认:原生位置</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>SecondaryCardIconOriginY</string>
+			<key>label</key>
+			<string>副卡上下位置</string>
+			<key>placeholder</key>
+			<string>默认:原生位置</string>
+		</dict>
+		<dict>
 			<key>cell</key>
 			<string>PSLabelCell</string>
 			<key>isStaticText</key>
@@ -1054,6 +1130,96 @@ DataNetWork &gt; 存放数据图标文件
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
 			<string>signalIconSize</string>
+			<key>max</key>
+			<integer>2</integer>
+			<key>min</key>
+			<integer>0</integer>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowDataNetWork</string>
+			<key>label</key>
+			<string>自定数据图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowDataNetWorkColor</string>
+			<key>label</key>
+			<string>数据显示原色</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>DataNetWorkIconOriginX</string>
+			<key>label</key>
+			<string>数据左右位置</string>
+			<key>placeholder</key>
+			<string>默认:原生位置</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>DataNetWorkIconOriginY</string>
+			<key>label</key>
+			<string>数据上下位置</string>
+			<key>placeholder</key>
+			<string>默认:原生位置</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLabelCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>数据缩放大小</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>0.4</real>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>DataNetWorkIconSize</string>
 			<key>max</key>
 			<integer>2</integer>
 			<key>min</key>
