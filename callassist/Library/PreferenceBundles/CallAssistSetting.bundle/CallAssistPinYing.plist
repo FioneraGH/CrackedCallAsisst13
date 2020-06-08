@@ -80,6 +80,20 @@
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
+			<string>isSimCardColor</string>
+			<key>label</key>
+			<string>SIM_CARD_COLOR</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
 			<string>isDialerChangeCall</string>
 			<key>label</key>
 			<string>IS_DIALER_CHANGECALL</string>

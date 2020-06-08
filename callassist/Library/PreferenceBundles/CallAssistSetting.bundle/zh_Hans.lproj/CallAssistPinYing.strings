@@ -14,4 +14,5 @@
 "T9_LIST_AREA" = "列表提示区域";
 "LOGOUT_TAKES_EFFECT" = "提示:设置后等待几秒后注销,防止未生效";
 "LOGOUT_DESKTOP_TAKES_EFFECT" = "注销桌面生效";
+"SIM_CARD_COLOR" = "双卡标签彩色";
 

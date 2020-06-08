@@ -457,7 +457,7 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>label</key>
 			<string>网速前缀标识</string>
 			<key>placeholder</key>
-			<string></string>
+			<string>标识以英文下的 , 进行分割</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -859,7 +859,7 @@ DataNetWork &gt; 存放数据图标文件
 			<key>key</key>
 			<string>isShowSystemicon</string>
 			<key>label</key>
-			<string>显示系统图标</string>
+			<string>系统图标开关</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -874,6 +874,104 @@ DataNetWork &gt; 存放数据图标文件
 			<string>isShowSystemIconColor</string>
 			<key>label</key>
 			<string>显示图标原色</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemlocation</string>
+			<key>label</key>
+			<string>显示定位图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemBluetoothIcon</string>
+			<key>label</key>
+			<string>显示蓝牙图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemVPNIcon</string>
+			<key>label</key>
+			<string>显示VPN图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemLockIcon</string>
+			<key>label</key>
+			<string>显示锁定图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemMuteIcon</string>
+			<key>label</key>
+			<string>显示静音图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemQuietIcon</string>
+			<key>label</key>
+			<string>显示勿扰图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSystemAlarmIcon</string>
+			<key>label</key>
+			<string>显示闹钟图标</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>

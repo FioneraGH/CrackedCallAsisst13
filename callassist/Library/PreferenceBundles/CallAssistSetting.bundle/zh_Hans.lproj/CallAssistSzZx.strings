@@ -75,4 +75,5 @@
     "TWO_TIME_LINE_STRING_TIPS" = "状态栏时间格式|默认留空";
     "WECHAT_MESSAGE_RECT" = "微信消息防撤";
     "WXCHAT_SETTINGS" = "微信相关设置";
+    "IS_SHOW_PAGE_INDICATOR" = "隐藏翻页小点";
 }

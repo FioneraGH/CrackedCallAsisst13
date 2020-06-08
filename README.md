@@ -4,11 +4,13 @@ CallAssist13 is a misc tool for jailbroken device.
 
 CallAssist13 is 1.2.2.
 
-Patch(28E34C39) it with IDA. 
+Patch(28E34C39/08E16F39) it with IDA. 
 
 Buy License [Here](http://buy.htv123.com/).
 
 ### Offset
+
+- 1.2.8.0 (0x2678C)
 
 - 1.2.3.0 (0x15624)
 
