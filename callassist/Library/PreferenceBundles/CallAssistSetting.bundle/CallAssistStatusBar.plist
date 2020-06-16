@@ -318,6 +318,7 @@ MM = 月份                               dd = 日
 E  = 周几  E1 = 周几的几  EEEE = 星期几      
 N1 = 农历月                       N2 = 农历日
 a  = 时间状语(如:凌晨 佛晓 黎明 黄昏 正午等)
+DW = 电池温度    DL = 电池当前电流
 
 /*********** 格式参数设置***********/
 {}里面为要显示的内容，可以无限制设置
@@ -707,6 +708,88 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>状态文字大小</string>
 			<key>placeholder</key>
 			<string>默认:8号</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBTDLDW</string>
+			<key>label</key>
+			<string>温度电流显示</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>☀️,⚡️</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryDWDLTextPrefix</string>
+			<key>label</key>
+			<string>温度电流前缀</string>
+			<key>placeholder</key>
+			<string>默认: ☀️,⚡️</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>58</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryDWDLTextX</string>
+			<key>label</key>
+			<string>温度电流左右</string>
+			<key>placeholder</key>
+			<string>默认:58.0</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<real>11.5</real>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryDWDLTextY</string>
+			<key>label</key>
+			<string>温度电流上下</string>
+			<key>placeholder</key>
+			<string>默认:11.5</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<integer>8</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>batteryDWDLTextSize</string>
+			<key>label</key>
+			<string>温度电流大小</string>
+			<key>placeholder</key>
+			<string>默认:8号</string>
+		</dict>
+	   <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
