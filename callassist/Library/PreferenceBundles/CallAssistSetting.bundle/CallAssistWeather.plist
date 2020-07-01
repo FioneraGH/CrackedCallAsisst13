@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>开启天气,可能会增加可接受范围电能消耗
+您自行选择是否开启(或关闭),关闭后不会增加功耗</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>WEATHER_DETAILED_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowWeather</string>
+			<key>label</key>
+			<string>SHOW_WEATHER</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isNoShowWLock</string>
+			<key>label</key>
+			<string>锁屏隐藏显示</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowWLableBorder</string>
+			<key>label</key>
+			<string>显示调试边框</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>27</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>weatherTop</string>
+			<key>label</key>
+			<string>天气上下位置</string>
+			<key>placeholder</key>
+			<string>如:27</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>305</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>weatherLeft</string>
+			<key>label</key>
+			<string>天气左右位置</string>
+			<key>placeholder</key>
+			<string>如:305</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>220</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>weatherWidth</string>
+			<key>label</key>
+			<string>天气整体宽度</string>
+			<key>placeholder</key>
+			<string>如:220</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>20</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>weatherHeight</string>
+			<key>label</key>
+			<string>天气整体高度</string>
+			<key>placeholder</key>
+			<string>如:20</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>weatherFormatAlign</string>
+			<key>validTitles</key>
+			<array>
+				<string>整体格式居左</string>
+				<string>整体格式居中</string>
+				<string>整体格式居右</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLabelCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>天气格式代码</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cellClass</key>
+			<string>ZSCallAssistCell</string>
+			<key>default</key>
+			<string>{格式=icon}{格式=city ,大小=11,加粗=1,颜色=#EB4310}{格式=dqtq ,大小=10,加粗=1}{格式= dqwd°,大小=11,加粗=1,颜色=#24998d}</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>height</key>
+			<string>180</string>
+			<key>key</key>
+			<string>weatherFormatParma</string>
+		</dict>
+		<dict>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>confirmation</key>
+			<dict>
+				<key>okTitle</key>
+				<string>cball06</string>
+				<key>prompt</key>
+				<string>重要说明(天气显示格式)
+/*********** 自定义格式关键字 ***********/
+icon = 图标
+dqwd = 当前温度    
+dqtq = 当前天气     
+zgwd = 最高温度     
+zdwd = 最低温度
+jygl = 降雨概率
+city = 当前城市
+
+/*********** 格式参数设置***********/
+{}里面为要显示的内容，可以无限制设置
+大小 = 显示内容的字体大小  
+例如:大小=12
+颜色 = 显示内容的颜色  
+例如:颜色=#ffff00
+加粗 = 显示内容的粗细，0-1可调  
+例如:加粗=1
+格式 = 显示的具体内容  
+例如:格式=dqwd
+偏移 = 显示内容的上下距离,正整向上移动，负数向下移动  
+例如:偏移=8.5
+字距 = 显示内容之间的距离,正负可以调
+例如:字距=-0.8
+
+设置样式,多个参数用英文逗号“,”隔开
+{格式=icon,大小=12}
+
+提供一个格式参考：
+{格式=icon}{格式=city ,大小=11,加粗=1,颜色=#EB4310}
+{格式=dqtq ,大小=10,加粗=1}
+{格式= dqwd°,大小=11,加粗=1,颜色=#24998d}
+显示效果: ⛅️ 苏州市 局部多云 34°</string>
+				<key>title</key>
+				<string>我明白了</string>
+			</dict>
+			<key>height</key>
+			<integer>45</integer>
+			<key>label</key>
+			<string>天气格式说明</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>WEATHER_SETTINGS</string>
+</dict>
+</plist>

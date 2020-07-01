@@ -227,6 +227,20 @@
 			<key>PostNotification</key>
 			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
 			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowTimeLableBorder</string>
+			<key>label</key>
+			<string>显示调试边框</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>default</key>
 			<string>0</string>
@@ -354,7 +368,7 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>height</key>
 			<integer>45</integer>
 			<key>label</key>
-			<string>自定义时间格式说明</string>
+			<string>时间格式说明</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -415,6 +429,34 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>isStateSpeed</string>
 			<key>label</key>
 			<string>状态栏显网速</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isNoShowLockSpeed</string>
+			<key>label</key>
+			<string>锁屏隐藏显示</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowSpeedLableBorder</string>
+			<key>label</key>
+			<string>显示调试边框</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -645,7 +687,9 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<true/>
 			<key>label</key>
 			<string>刘海机型特殊功能
-注:非刘海机型使用X状态栏等插件也能使用部分功能</string>
+注:非刘海机型使用X状态栏等插件也能使用部分功能
+开启实时电流电温显示,可能会增加可接受范围电能消耗
+您自行选择是否开启(或关闭),关闭后不会增加功耗</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -719,9 +763,51 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
-			<string>isShowBTDLDW</string>
+			<string>isShowBTDL</string>
 			<key>label</key>
-			<string>温度电流显示</string>
+			<string>电池电流显示</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowExChange</string>
+			<key>label</key>
+			<string>交换显示位置</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBTDW</string>
+			<key>label</key>
+			<string>电池温度显示</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowDLDWLableBorder</string>
+			<key>label</key>
+			<string>显示调试边框</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -787,7 +873,7 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<key>placeholder</key>
 			<string>默认:8号</string>
 		</dict>
-	   <dict>
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 		</dict>
@@ -865,16 +951,6 @@ E1 = 取星期的天数  例如:礼拜E1=礼拜一 周E1=周日
 			<string>themeData:</string>
 		</dict>
 		<dict>
-			<key>action</key>
-			<string>openPatch</string>
-			<key>alignment</key>
-			<integer>2</integer>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>转到主题目录(Filza)</string>
-		</dict>
-		<dict>
 			<key>alignment</key>
 			<integer>2</integer>
 			<key>background</key>
@@ -927,6 +1003,16 @@ DataNetWork &gt; 存放数据图标文件
 			<string>主题路径说明</string>
 		</dict>
 		<dict>
+			<key>action</key>
+			<string>openPatch</string>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>转到目录(Filza)</string>
+		</dict>
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 		</dict>
@@ -943,6 +1029,20 @@ DataNetWork &gt; 存放数据图标文件
 			<string>isShowSystemicon</string>
 			<key>label</key>
 			<string>系统图标开关</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowIconLableBorder</string>
+			<key>label</key>
+			<string>显示调试边框</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -1515,6 +1615,20 @@ DataNetWork &gt; 存放数据图标文件
 			<string>isShowBatteryicon</string>
 			<key>label</key>
 			<string>自定电池图标</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>isShowBatteryExChange</string>
+			<key>label</key>
+			<string>交换图标背景</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>

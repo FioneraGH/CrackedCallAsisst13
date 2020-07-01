@@ -24,7 +24,7 @@
     "IS_HIDE_HOMEBAR" = "隐藏底部横条";
     "IS_HIDE_HOMEFOLDER" = "藏文件夹背景";
     "IS_HIDE_HOMEFOLDER_BT" = "藏文件夹标题";
-    "IS_LONGPRESSSTA" = "长按截图预览";
+    "IS_LONGPRESSSTA" = "按状态栏截图";
     "IS_NOSHOW_FOREVER" = "照片永久删除";
     "IS_NOSHOW_LOCATIONICON" = "隐藏定位图标";
     "IS_NOSHOW_RETTEXT" = "隐藏返回导航";

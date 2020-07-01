@@ -7,7 +7,7 @@
     "CLEARED_CALL_TIME" = "通话时间清零";
     "CURRENT_SYSTEM_VERSION" = "当前系统版本";
     "DETAILED_SETTINGS" = "锁屏,网络,杂项功能等设置";
-    "DEVELOPER_USER" = "电话助手(CallAssist) ©2020  版本: v1.2.8";
+    "DEVELOPER_USER" = "© 2020 CallAssist(电话助手) 版本: v2.0.5";
     "DIALPAD_SETTINGS" = "拨号键盘设置";
     "GOOD" = "好的";
     "HARASSMENT_INTERCEPTION_SETTINGS" = "电话骚扰拦截设置";
@@ -16,7 +16,7 @@
     "INCOMING_RECORD_CALL_LIST" = "查看录音文件列表";
     "INTRODUCTION_TIPS" = "☆☆☆电话助手☆☆☆\n集原生T9,来去电归属地,通话振动,短信归属地,骚扰拦截,网速显示,状态栏美化,通话录音等集于一身的强大插件！\n\n开发者: xybp888\n(电话助手源https://apt.htv123.com/)\n\n界面美化: 妖刀\n(Hi客源http://repo.qqtlr.com/)\n";
     "LOGOUT_DESKTOP_TAKES_EFFECT" = "注销桌面生效";
-    "NOTE_TIPS" = "注意:请根据提示激活,15秒后点击[注销]";
+    "NOTE_TIPS" = "注意:请根据提示激活,确保[设置]有网络权限!";
     "NUMBER_CALL_RECORDS" = "通话记录条数";
     "OTHER_MISCELLANEOUS_SETTINGS" = "其他杂项设置";
     "PAY_GENUINE_LICENSE" = "赞助购买授权";
@@ -34,4 +34,6 @@
     "T9_DIALPAD_SETTINGS" = "新版T9拨号键盘设置";
     "TELEPHONE_ASSISTANT" = "电话助手";
     "YES" = "确定";
+    "WEATHER_SETTINGS" = "城市天气设置";
+    "STATUSBAR_WEATHER_SETTINGS" = "获取城市天气详细设置";
 }

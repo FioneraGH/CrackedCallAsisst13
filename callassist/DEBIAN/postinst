@@ -3,7 +3,7 @@
 #短信拦截进程重新启动使拦截功能生效
 killall -9 imagent &> /dev/null
 
-#重新启动录音进程使录音功能生效
+#录音进程
 killall -9 mediaserverd &> /dev/null
 killall -9 InCallService &> /dev/null
 

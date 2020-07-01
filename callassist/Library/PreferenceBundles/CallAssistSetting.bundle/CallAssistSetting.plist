@@ -130,6 +130,26 @@
 			<key>isStaticText</key>
 			<true/>
 			<key>label</key>
+			<string>STATUSBAR_WEATHER_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>CallAssistWeather</string>
+			<key>icon</key>
+			<string>icons/14@2x.png</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>WEATHER_SETTINGS</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
 			<string>DETAILED_SETTINGS</string>
 		</dict>
 		<dict>
