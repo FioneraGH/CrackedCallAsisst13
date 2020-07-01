@@ -10,6 +10,8 @@ Buy License [Here](http://buy.htv123.com/).
 
 ### Offset
 
+- 2.1.1 (0x283FC)
+
 - 2.0.5 (0x260FC) Welcome to 2.x release.
 
 - 1.3.2.0 (0x282AC)

@@ -36,7 +36,55 @@
 			<key>key</key>
 			<string>isShowScrrenRed</string>
 			<key>label</key>
-			<string>缩小状态区域</string>
+			<string>缩小活动视图</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>59.5</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>ActiveFrameOriginX</string>
+			<key>label</key>
+			<string>活动视图左右</string>
+			<key>placeholder</key>
+			<string>如:59.5</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>38.0</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>ActiveFrameOriginY</string>
+			<key>label</key>
+			<string>活动视图上下</string>
+			<key>placeholder</key>
+			<string>如:38.0</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>8</string>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
+			<string>ActiveFrameSize</string>
+			<key>label</key>
+			<string>活动视图大小</string>
+			<key>placeholder</key>
+			<string>如:8</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>

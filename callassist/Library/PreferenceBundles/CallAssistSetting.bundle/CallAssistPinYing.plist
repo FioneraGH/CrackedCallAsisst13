@@ -52,6 +52,20 @@
 			<key>defaults</key>
 			<string>com.xybp888.CallAssistSetting</string>
 			<key>key</key>
+			<string>isShowDefaultDialer</string>
+			<key>label</key>
+			<string>强显拨号键盘</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.xybp888.CallAssistSetting.settingsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.xybp888.CallAssistSetting</string>
+			<key>key</key>
 			<string>isDialerVibration</string>
 			<key>label</key>
 			<string>KEYBOARD_BUTTON_VIBRATION</string>
